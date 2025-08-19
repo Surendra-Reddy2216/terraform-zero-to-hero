@@ -5,3 +5,9 @@ variable "ami_value" {
 variable "instance_type_value" {
     description = "value for instance_type"
 }
+
+variable "tags" {
+  description = "A map of tags to assign to the instance"
+  type        = map(string)
+  default     = {}
+}
